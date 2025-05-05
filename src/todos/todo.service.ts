@@ -9,7 +9,7 @@ export class TodosService {
   // Constructor injection of the Todo repository
   // This allows us to interact with the database using TypeORM
   // The @InjectRepository decorator is used to inject the repository for the Todo entity
-  // The Repository<Todo> type is a TypeORM repository that provides methods for CRUD operations on the Todo entity
+  // The Repository<Todo> type is a TypeORM repository that provides methods for CRUD operations on the Todo entity 
   constructor(
     @InjectRepository(Todo)
     private readonly todoRepo: Repository<Todo>,
